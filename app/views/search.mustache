@@ -1,0 +1,15 @@
+{{<layout}}
+
+  {{$applicationContent}}
+    <h1 id='title'>{{#__}}search.title{{/__}}</h1>
+    <form method="POST">
+        <label for='term'>{{#__}}search.label-term{{/__}}</label>
+        <input id='term' name='term' type='text'>
+        <button id='search'>{{#__}}search.button{{/__}}</button>
+    </form>
+
+    <div id='result'>You searched for {{term}}...</div>
+
+  {{/applicationContent}}
+
+{{/layout}}

@@ -1,5 +1,7 @@
 {
-  "main": {
-    "title": "Welcome from i18n"
+  "search": {
+    "title": "Sonos Search",
+    "label-term": "What would you like to search for ?",
+    "button": "Search"
   }
 }
