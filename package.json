@@ -1,0 +1,65 @@
+{
+  "name": "firecast",
+  "version": "1.0.0",
+  "description": "Casting to Sonos and Chromecast",
+  "scripts": {
+    "start": "node ./bin/www",
+    "compile": "gulp js css",
+    "watch": "gulp watch",
+    "lint": "eslint .",
+    "pretest": "eslint . && npm run compile",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathancashmore/firecast.git"
+  },
+  "keywords": [
+    "Sonos",
+    "Chromecast",
+    "cast"
+  ],
+  "author": "Nathan Cashmore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathancashmore/firecast/issues"
+  },
+  "homepage": "https://github.com/nathancashmore/firecast#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "body-parser": "~1.13",
+    "browserify": "^13.0.1",
+    "consolidate": "~0.14",
+    "cookie-parser": "~1.3",
+    "debug": "~2.2",
+    "express": "~4.13",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "hogan.js": "~3.0",
+    "i18n": "^0.8.2",
+    "jquery": "^2.2.4",
+    "morgan": "~1.6",
+    "pg": "^4.5.5",
+    "serve-favicon": "~2.3",
+    "vinyl-source-stream": "^1.1.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "mocha": "^2.4.5",
+    "moment": "^2.14.1",
+    "zombie": "^4.2.1"
+  },
+  "engines": {
+    "node": "6.1.0"
+  }
+}

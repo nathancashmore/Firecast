@@ -1,0 +1,20 @@
+<html>
+  {{$head}}
+    <link href="{{{ assetPath }}}stylesheets/style.css" media="screen" rel="stylesheet" type="text/css"/>
+  {{/head}}
+
+  {{$bodyStart}}
+  {{/bodyStart}}
+
+  {{$content}}
+    <main id="content">
+      {{$applicationContent}}{{/applicationContent}}
+    </main>
+  {{/content}}
+
+  {{$bodyEnd}}
+    <script type="text/javascript" src="{{{ assetPath }}}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{{ assetPath }}}js/main.js"></script>
+  {{/bodyEnd}}
+
+</html>
