@@ -4,7 +4,7 @@ const searchPage = helper.searchPage;
 const expect = require('chai').expect;
 
 describe('Search page', () => {
-  it('should successfully display page as the entry point', () =>
+  it('should display search page', () =>
     searchPage.visit()
       .then(() => expect(searchPage.browser.assert.success()))
       .then(() => expect(searchPage.browser.assert.text('#title', 'Sonos Search')))

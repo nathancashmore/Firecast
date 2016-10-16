@@ -4,7 +4,7 @@ class SearchPage {
   }
 
   visit() {
-    return this.browser.visit('/');
+    return this.browser.visit('/search');
   }
 
   search(item) {
