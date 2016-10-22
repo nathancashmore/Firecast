@@ -4,36 +4,30 @@ const request = require('request');
 
 const router = new express.Router();
 
-function itemIfPresent(item, previousPath) {
-  if (item.attributes) {
-    return {
-      name: item.attributes.title,
-      link: `/search?path=${previousPath}/${item.attributes.key}`,
-    };
-  }
-
-  return { name: 'Not Found' };
+function buildDirectory(item) {
+  return {
+    name: item.attributes.title,
+    link: `/search?path=${item.attributes.key}`,
+  };
 }
 
-function buildFileStructure(xmlbody, previousPath) {
-  const directory = JSON.parse(convert.xml2json(xmlbody));
-  const menu = [];
-
-  directory.elements.forEach((container) => {
-    container.elements.forEach((item) => {
-      menu.push(itemIfPresent(item, previousPath));
-    });
-  });
-
-  return menu;
+function buildCatalogue(xmlbody) {
+  const mediaContainer = JSON.parse(convert.xml2json(xmlbody));
+  return mediaContainer.elements[0].elements.map((item) => {
+    if (item.name === 'Directory') {
+      return buildDirectory(item);
+    }
+    return {};
+  }
+  );
 }
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  const plexLibraryPath = req.query.path || '/library';
+  const plexLibraryPath = req.query.path || '/library/sections/2/folder';
 
   request(`${res.locals.plexServer}${plexLibraryPath}`, (error, response, body) => {
-    res.render('search', { menu: buildFileStructure(body, plexLibraryPath) });
+    res.render('search', { menu: buildCatalogue(body) });
   });
 });
 

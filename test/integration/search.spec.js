@@ -5,22 +5,18 @@ const expect = require('chai').expect;
 
 describe('Search page', () => {
   it('should display search page', () =>
-    searchPage.visit()
+    searchPage.browser.visit('/search')
       .then(() => expect(searchPage.browser.assert.success()))
       .then(() => expect(searchPage.browser.assert.text('#title', 'Search')))
   );
 
   it('should display plex directories based on path', () =>
-    searchPage.visit('/library')
-      .then(() => expect(searchPage.menuItemContains('1', 'Library Sections')))
-      .then(() => expect(searchPage.menuItemContains('2', 'Recently Added Content')))
-      .then(() => expect(searchPage.menuItemContains('3', 'On Deck Content')))
+    searchPage.visit('/library/sections/2/folder?parent=85')
+      .then(() => expect(searchPage.menuItemContains('1', 'Random Access Memories')))
   );
 
-  it('should display plex library by default', () =>
+  it('should display plex music folder by default', () =>
     searchPage.browser.visit('/search')
-      .then(() => expect(searchPage.menuItemContains('1', 'Library Sections')))
-      .then(() => expect(searchPage.menuItemContains('2', 'Recently Added Content')))
-      .then(() => expect(searchPage.menuItemContains('3', 'On Deck Content')))
+      .then(() => expect(searchPage.menuItemContains('1', 'Adele')))
   );
 });
