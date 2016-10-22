@@ -11,5 +11,9 @@ class SearchPage {
     return this.browser.assert.text(`#menu li:nth-child(${index})`, `${title}`);
   }
 
+  clickMenuItem(title) {
+    return this.browser.clickLink(`[track="${title}"]`)
+  }
+
 }
 module.exports = SearchPage;

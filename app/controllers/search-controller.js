@@ -11,12 +11,24 @@ function buildDirectory(item) {
   };
 }
 
+function buildTrack(item) {
+  return {
+    name: item.attributes.title,
+    link: `/play?track=${item.elements[0].elements[0].attributes.key}`,
+  };
+}
+
 function buildCatalogue(xmlbody) {
   const mediaContainer = JSON.parse(convert.xml2json(xmlbody));
   return mediaContainer.elements[0].elements.map((item) => {
     if (item.name === 'Directory') {
       return buildDirectory(item);
     }
+
+    if (item.name === 'Track') {
+      return buildTrack(item);
+    }
+
     return {};
   }
   );
