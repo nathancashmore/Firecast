@@ -3,12 +3,12 @@ class SearchPage {
     this.browser = browser;
   }
 
-  visit() {
-    return this.browser.visit('/search');
+  visit(path) {
+    return this.browser.visit(`/search?path=${path}`);
   }
 
-  search(item) {
-    return this.browser.fill('#term', item).pressButton('Search');
+  menuItemContains(index, title) {
+    return this.browser.assert.text(`#menu li:nth-child(${index})`, `${title}`);
   }
 
 }

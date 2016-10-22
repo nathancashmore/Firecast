@@ -6,6 +6,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 const searchController = require('./controllers/search-controller');
+const statusController = require('./controllers/status-controller');
+const playController = require('./controllers/play-controller');
 const i18n = require('./middleware/i18n');
 
 const app = express();
@@ -21,6 +23,11 @@ app.set('views', path.join(__dirname, 'views'));
 const basePath = app.locals.basePath = process.env.EXPRESS_BASE_PATH || '';
 const assetPath = `${basePath}/`;
 
+// set common application environment variables
+const plexHost = process.env.PLEX_HOST || '10.10.0.10';
+const plexPort = process.env.PLEX_PORT || '32400';
+const plexServer = `http://${plexHost}:${plexPort}`;
+
 // Middleware to set default layouts.
 // This must be done per request (and not via app.locals) as the Consolidate.js
 // renderer mutates locals.partials :(
@@ -32,6 +39,7 @@ app.use((req, res, next) => {
     partials: {
       layout: 'layouts/main',
     },
+    plexServer,
   });
   next();
 });
@@ -50,6 +58,8 @@ app.use(assetPath, express.static(path.join(__dirname, '..', 'dist', 'public')))
 
 app.use(`${basePath}/`, searchController);
 app.use(`${basePath}/search`, searchController);
+app.use(`${basePath}/status`, statusController);
+app.use(`${basePath}/play`, playController);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
