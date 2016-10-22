@@ -1,18 +1,36 @@
 const helper = require('../specHelper');
 
 const searchPage = helper.searchPage;
+const statusPage = helper.statusPage;
+
 const expect = require('chai').expect;
 
 describe('Search page', () => {
-  it('should successfully display page as the entry point', () =>
-    searchPage.visit()
+  it('should display search page', () =>
+    searchPage.browser.visit('/search')
       .then(() => expect(searchPage.browser.assert.success()))
-      .then(() => expect(searchPage.browser.assert.text('#title', 'Sonos Search')))
+      .then(() => expect(searchPage.browser.assert.text('#title', 'Search')))
   );
 
-  it('should display what you search for', () =>
-    searchPage.search('something')
-      .then(() => expect(
-        searchPage.browser.assert.text('#result', 'You searched for something...')))
+  it('should display plex directories based on path', () =>
+    searchPage.visit('/library/sections/2/folder?parent=85')
+      .then(() => expect(searchPage.menuItemContains('1', 'Random Access Memories')))
   );
+
+  it('should display plex music folder by default', () =>
+    searchPage.browser.visit('/search')
+      .then(() => expect(searchPage.menuItemContains('1', 'Adele')))
+  );
+
+  it('should display plex tracks based on path', () =>
+    searchPage.visit('/library/sections/2/folder?parent=86')
+      .then(() => expect(searchPage.menuItemContains('1', 'Get Lucky')))
+  );
+
+  it('should display status page when track selected', () =>
+    searchPage.visit('/library/sections/2/folder?parent=86')
+      .then(() => searchPage.clickMenuItem('Get Lucky'))
+      .then(() => statusPage.isPlaying('Get Lucky by Daft Punk'))
+  );
+
 });

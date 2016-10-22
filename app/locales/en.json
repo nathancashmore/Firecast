@@ -1,7 +1,8 @@
 {
   "search": {
-    "title": "Sonos Search",
-    "label-term": "What would you like to search for ?",
-    "button": "Search"
+    "title": "Search"
+  },
+  "status": {
+    "title": "Status"
   }
 }
