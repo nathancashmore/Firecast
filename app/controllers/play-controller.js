@@ -5,8 +5,11 @@ const router = new express.Router();
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  new SonosHelper().play(`${res.locals.plexServer}${req.query.track}`, () =>
-    res.redirect('/status')
+  const helper = new SonosHelper();
+  helper.play(`${res.locals.plexServer}${req.query.track}`, () =>
+    helper.whatsPlaying((track) =>
+      res.render('play', track)
+    )
   );
 });
 

@@ -6,7 +6,6 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 const searchController = require('./controllers/search-controller');
-const statusController = require('./controllers/status-controller');
 const playController = require('./controllers/play-controller');
 const i18n = require('./middleware/i18n');
 
@@ -58,7 +57,6 @@ app.use(assetPath, express.static(path.join(__dirname, '..', 'dist', 'public')))
 
 app.use(`${basePath}/`, searchController);
 app.use(`${basePath}/search`, searchController);
-app.use(`${basePath}/status`, statusController);
 app.use(`${basePath}/play`, playController);
 
 // catch 404 and forward to error handler

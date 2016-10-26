@@ -1,7 +1,7 @@
 const helper = require('../specHelper');
 
 const searchPage = helper.searchPage;
-const statusPage = helper.statusPage;
+const playPage = helper.playPage;
 
 const expect = require('chai').expect;
 
@@ -27,9 +27,9 @@ describe('Search page', () => {
       .then(() => expect(searchPage.menuItemContains('1', 'Get Lucky')))
   );
 
-  it('should display status page when track selected', () =>
+  it('should display play page when track selected', () =>
     searchPage.visit('/library/sections/2/folder?parent=86')
       .then(() => searchPage.clickMenuItem('Get Lucky'))
-      .then(() => statusPage.isPlaying('Get Lucky by Daft Punk'))
+      .then(() => playPage.isPlaying('Get Lucky by Daft Punk'))
   );
 });
