@@ -1,0 +1,96 @@
+GET /library/sections/2/folder
+host: 10.10.0.10:32400
+
+HTTP/1.1 200 OK
+content-type: text/xml;charset=utf-8
+content-length: 7609
+connection: close
+x-plex-protocol: 1.0
+cache-control: no-cache
+
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaContainer size="75" allowSync="1" art="/:/resources/artist-fanart.jpg" identifier="com.plexapp.plugins.library" librarySectionID="2" librarySectionTitle="Music" librarySectionUUID="f4d39954-5efe-410d-9478-d0cd36141e3d" mediaTagPrefix="/system/bundle/media/flags/" mediaTagVersion="1458564056" nocache="1" thumb="/:/resources/artist.png" title1="Music" title2="By Folder" viewGroup="track" viewMode="65593">
+<Directory key="/library/sections/2/folder?parent=100" title="Adele" />
+<Directory key="/library/sections/2/folder?parent=169" title="Aggro_Santos" />
+<Directory key="/library/sections/2/folder?parent=184" title="Amy Winehouse" />
+<Directory key="/library/sections/2/folder?parent=35" title="Annie Mac" />
+<Directory key="/library/sections/2/folder?parent=168" title="Beatfreakz" />
+<Directory key="/library/sections/2/folder?parent=166" title="Benny_Benassi" />
+<Directory key="/library/sections/2/folder?parent=164" title="Beyonce" />
+<Directory key="/library/sections/2/folder?parent=98" title="Beyoncé Knowles-Jay-Z" />
+<Directory key="/library/sections/2/folder?parent=96" title="Boney M" />
+<Directory key="/library/sections/2/folder?parent=94" title="Calvin Harris" />
+<Directory key="/library/sections/2/folder?parent=33" title="Caravan Palace" />
+<Directory key="/library/sections/2/folder?parent=92" title="Christophe Beck" />
+<Directory key="/library/sections/2/folder?parent=163" title="Classic Chilled Ibiza [Disc 1]" />
+<Directory key="/library/sections/2/folder?parent=87" title="Coldplay" />
+<Directory key="/library/sections/2/folder?parent=111" title="DJ Fresh" />
+<Directory key="/library/sections/2/folder?parent=85" title="Daft Punk" />
+<Directory key="/library/sections/2/folder?parent=83" title="Duffy" />
+<Directory key="/library/sections/2/folder?parent=161" title="Elbow" />
+<Directory key="/library/sections/2/folder?parent=159" title="Emeli Sandé" />
+<Directory key="/library/sections/2/folder?parent=81" title="Eminem" />
+<Directory key="/library/sections/2/folder?parent=79" title="Eurythmics" />
+<Directory key="/library/sections/2/folder?parent=157" title="Fedde Le Grand" />
+<Directory key="/library/sections/2/folder?parent=115" title="Florence + the Machine" />
+<Directory key="/library/sections/2/folder?parent=77" title="Fugees" />
+<Directory key="/library/sections/2/folder?parent=125" title="Groove Armada" />
+<Directory key="/library/sections/2/folder?parent=156" title="Jersey Beat_ The Music Of Frankie Valli and The Four Seasons" />
+<Directory key="/library/sections/2/folder?parent=57" title="Jessie J" />
+<Directory key="/library/sections/2/folder?parent=109" title="John Newman" />
+<Directory key="/library/sections/2/folder?parent=107" title="John Williams" />
+<Directory key="/library/sections/2/folder?parent=154" title="José González" />
+<Directory key="/library/sections/2/folder?parent=51" title="Jungle" />
+<Directory key="/library/sections/2/folder?parent=151" title="Justice" />
+<Directory key="/library/sections/2/folder?parent=149" title="Kasabian" />
+<Directory key="/library/sections/2/folder?parent=147" title="Katy B feat. Ms Dynamite" />
+<Directory key="/library/sections/2/folder?parent=145" title="Katy B feat_ Ms Dynamite" />
+<Directory key="/library/sections/2/folder?parent=54" title="Katy Perry" />
+<Directory key="/library/sections/2/folder?parent=138" title="LMFAO" />
+<Directory key="/library/sections/2/folder?parent=114" title="Labrinth" />
+<Directory key="/library/sections/2/folder?parent=143" title="Lady Gaga" />
+<Directory key="/library/sections/2/folder?parent=140" title="Lana Del Rey" />
+<Directory key="/library/sections/2/folder?parent=60" title="Madison Beer" />
+<Directory key="/library/sections/2/folder?parent=136" title="Magnetic Man ft Katy B" />
+<Directory key="/library/sections/2/folder?parent=182" title="Mark Ronson" />
+<Directory key="/library/sections/2/folder?parent=171" title="Michael Jackson" />
+<Directory key="/library/sections/2/folder?parent=75" title="Ministry - Chilled House Session, Vol. 4 Disc 1" />
+<Directory key="/library/sections/2/folder?parent=74" title="Ministry - Chilled House Session, Vol. 4 Disc 2" />
+<Directory key="/library/sections/2/folder?parent=135" title="Misc" />
+<Directory key="/library/sections/2/folder?parent=134" title="MistaNova" />
+<Directory key="/library/sections/2/folder?parent=186" title="Moby" />
+<Directory key="/library/sections/2/folder?parent=132" title="Mumford &amp; Sons" />
+<Directory key="/library/sections/2/folder?parent=64" title="No More Idols" />
+<Directory key="/library/sections/2/folder?parent=55" title="Original Soundtrack" />
+<Directory key="/library/sections/2/folder?parent=130" title="Parov_Stelar" />
+<Directory key="/library/sections/2/folder?parent=127" title="Peter Bjorn And John" />
+<Directory key="/library/sections/2/folder?parent=105" title="Pharrell Williams" />
+<Directory key="/library/sections/2/folder?parent=71" title="Plan B" />
+<Directory key="/library/sections/2/folder?parent=53" title="Playlists" />
+<Directory key="/library/sections/2/folder?parent=70" title="Plump DJ&apos;s" />
+<Directory key="/library/sections/2/folder?parent=123" title="Professor_Green" />
+<Directory key="/library/sections/2/folder?parent=178" title="Queen" />
+<Directory key="/library/sections/2/folder?parent=103" title="Robin Thicke" />
+<Directory key="/library/sections/2/folder?parent=30" title="Rudimental" />
+<Directory key="/library/sections/2/folder?parent=121" title="Stevie Wonder" />
+<Directory key="/library/sections/2/folder?parent=67" title="The Black Keys" />
+<Directory key="/library/sections/2/folder?parent=65" title="The xx" />
+<Directory key="/library/sections/2/folder?parent=119" title="The_Automatic" />
+<Directory key="/library/sections/2/folder?parent=117" title="Tinie Tempah" />
+<Directory key="/library/sections/2/folder?parent=58" title="Unknown artist" />
+<Directory key="/library/sections/2/folder?parent=37" title="Various" />
+<Directory key="/library/sections/2/folder?parent=39" title="Various artists" />
+<Directory key="/library/sections/2/folder?parent=113" title="Vivaldi_ 4 Seasons (The) _ Wind Concertos" />
+<Directory key="/library/sections/2/folder?parent=62" title="X Ambassadors" />
+<Directory key="/library/sections/2/folder?parent=76" title="ill Manors" />
+<Track ratingKey="317" key="/library/metadata/317" parentRatingKey="316" type="track" title="Bang Bang" parentKey="/library/metadata/316" summary="" index="1" parentIndex="1" ratingCount="1732697" duration="199601" addedAt="1420580142" updatedAt="1472246174" chapterSource="" primaryExtraKey="/library/metadata/811">
+<Media id="732" duration="199601" bitrate="320" audioChannels="2" audioCodec="mp3" container="mp3">
+<Part id="732" key="/library/parts/732/file.mp3" duration="199601" file="C:\Music\Jessie J - Bang Bang.mp3" size="8068111" container="mp3" hasThumbnail="1" />
+</Media>
+</Track>
+<Track ratingKey="320" key="/library/metadata/320" parentRatingKey="319" type="track" title="Dark Horse" parentKey="/library/metadata/319" originalTitle="Katy Perry Feat. Juicy J" summary="" index="6" parentIndex="1" ratingCount="2859760" lastViewedAt="1472380298" year="2013" duration="215902" addedAt="1421083370" updatedAt="1472246149" chapterSource="" primaryExtraKey="/library/metadata/759">
+<Media id="733" duration="215902" bitrate="320" audioChannels="2" audioCodec="mp3" container="mp3">
+<Part id="733" key="/library/parts/733/file.mp3" duration="215902" file="C:\Music\Katy Perry - Dark Horse.mp3" size="8699124" container="mp3" hasThumbnail="1" />
+</Media>
+</Track>
+</MediaContainer>

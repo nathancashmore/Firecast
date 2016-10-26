@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+const Replay = require('replay');
 const helper = require('../specHelper');
 
 const expect = require('chai').expect;

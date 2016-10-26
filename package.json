@@ -59,6 +59,7 @@
     "eslint-plugin-import": "^1.8.0",
     "mocha": "^2.4.5",
     "moment": "^2.14.1",
+    "replay": "^2.1.2",
     "zombie": "^4.2.1"
   },
   "engines": {

@@ -1,0 +1,19 @@
+GET /library/sections/2/folder?parent=85
+host: 10.10.0.10:32400
+
+HTTP/1.1 200 OK
+content-type: text/xml;charset=utf-8
+content-length: 1074
+connection: close
+x-plex-protocol: 1.0
+cache-control: no-cache
+
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaContainer size="2" allowSync="1" art="/:/resources/artist-fanart.jpg" identifier="com.plexapp.plugins.library" librarySectionID="2" librarySectionTitle="Music" librarySectionUUID="f4d39954-5efe-410d-9478-d0cd36141e3d" mediaTagPrefix="/system/bundle/media/flags/" mediaTagVersion="1458564056" nocache="1" thumb="/:/resources/artist.png" title1="Music" title2="By Folder" viewGroup="track" viewMode="65593">
+<Directory key="/library/sections/2/folder?parent=86" title="Random Access Memories" />
+<Track ratingKey="1108" key="/library/metadata/1108" parentRatingKey="1107" type="track" title="Aerodynamic" parentKey="/library/metadata/1107" summary="" index="2" parentIndex="1" year="2001" duration="214804" addedAt="1347994539" chapterSource="">
+<Media id="1635" duration="214804" bitrate="192" audioChannels="2" audioCodec="mp3" container="mp3">
+<Part id="1635" key="/library/parts/1635/file.mp3" duration="214804" file="C:\Music\Daft Punk\02 Aerodynamic.mp3" size="5152653" container="mp3" />
+</Media>
+</Track>
+</MediaContainer>
