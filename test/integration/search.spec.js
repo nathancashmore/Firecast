@@ -32,5 +32,4 @@ describe('Search page', () => {
       .then(() => searchPage.clickMenuItem('Get Lucky'))
       .then(() => statusPage.isPlaying('Get Lucky by Daft Punk'))
   );
-
 });

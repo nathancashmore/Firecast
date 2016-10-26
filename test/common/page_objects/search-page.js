@@ -12,7 +12,7 @@ class SearchPage {
   }
 
   clickMenuItem(title) {
-    return this.browser.clickLink(`[track="${title}"]`)
+    return this.browser.clickLink(`[track="${title}"]`);
   }
 
 }
