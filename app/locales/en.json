@@ -2,7 +2,7 @@
   "search": {
     "title": "Search"
   },
-  "status": {
-    "title": "Status"
+  "play": {
+    "title": "Playing"
   }
 }

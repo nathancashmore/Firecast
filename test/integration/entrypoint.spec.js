@@ -1,4 +1,5 @@
 const helper = require('../specHelper');
+
 const expect = require('chai').expect;
 const browser = helper.browser;
 
