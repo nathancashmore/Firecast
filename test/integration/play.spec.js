@@ -1,16 +1,15 @@
+// eslint-disable-next-line no-unused-vars
+const Replay = require('replay');
 const helper = require('../specHelper');
 
 const playPage = helper.playPage;
 
-const billieJeanTrack = '/library/parts/5430/file.mp3';
+const daftPunkTrack = '/library/parts/1636/file.mp3';
 
 describe('Play page', () => {
-  before((done) => {
-    playPage.play(billieJeanTrack)
-      .then(() => done());
-  });
-
-  it('should display what is currently playing', () =>
-    playPage.isPlaying('Billie Jean by Michael Jackson')
+  it.skip('should display what is currently playing', (done) =>
+    playPage.play(daftPunkTrack)
+      .then(() => playPage.isPlaying('Get Lucky by Daft Punk'))
+      .then(() => done())
   );
 });

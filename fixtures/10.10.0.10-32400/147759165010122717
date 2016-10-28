@@ -1,0 +1,18 @@
+GET /library/sections/2/folder?parent=86
+host: 10.10.0.10:32400
+
+HTTP/1.1 200 OK
+content-type: text/xml;charset=utf-8
+content-length: 1075
+connection: close
+x-plex-protocol: 1.0
+cache-control: no-cache
+
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaContainer size="1" allowSync="1" art="/:/resources/artist-fanart.jpg" identifier="com.plexapp.plugins.library" librarySectionID="2" librarySectionTitle="Music" librarySectionUUID="f4d39954-5efe-410d-9478-d0cd36141e3d" mediaTagPrefix="/system/bundle/media/flags/" mediaTagVersion="1458564056" nocache="1" thumb="/:/resources/artist.png" title1="Music" title2="By Folder" viewGroup="track" viewMode="65593">
+<Track ratingKey="1110" key="/library/metadata/1110" parentRatingKey="1109" type="track" title="Get Lucky" parentKey="/library/metadata/1109" originalTitle="Daft Punk Feat. Pharrell Williams" summary="" index="8" parentIndex="1" year="2013" duration="369685" addedAt="1384464958" chapterSource="">
+<Media id="1636" duration="369685" bitrate="246" audioChannels="2" audioCodec="mp3" container="mp3">
+<Part id="1636" key="/library/parts/1636/file.mp3" duration="369685" file="C:\Music\Daft Punk\Random Access Memories\08 - Get Lucky.mp3" size="11497342" container="mp3" hasThumbnail="1" />
+</Media>
+</Track>
+</MediaContainer>
