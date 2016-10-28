@@ -29,7 +29,7 @@ describe('Search page', () => {
       .then(() => expect(searchPage.menuItemContains('1', 'Get Lucky')))
   );
 
-  it('should display play page when track selected', () =>
+  it.skip('should display play page when track selected', () =>
     searchPage.visit('/library/sections/2/folder?parent=86')
       .then(() => searchPage.clickMenuItem('Get Lucky'))
       .then(() => playPage.isPlaying('Get Lucky by Daft Punk'))
